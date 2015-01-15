@@ -216,5 +216,5 @@ angular.module('ionic.weather.directives', [])
         $element[0].style.backgroundImage = 'url(' + $scope.url + ')';
       }
     }
-  }
+  };
 });

@@ -17,7 +17,7 @@ var forecastioWeather = ['$q', '$resource', '$http', 'FORECASTIO_KEY', function(
     },
     getHourly: function(locationString) {
     }
-  }
+  };
 }];
 
 
@@ -107,7 +107,7 @@ angular.module('ionic.weather.services', ['ngResource'])
           console.log('reverse fail', results, status);
           q.reject(results);
         }
-      })
+      });
 
       return q.promise;
     },
@@ -126,7 +126,7 @@ angular.module('ionic.weather.services', ['ngResource'])
 })
 
 .factory('Flickr', function($q, $resource, FLICKR_API_KEY) {
-  var baseUrl = 'https://api.flickr.com/services/rest/'
+  var baseUrl = 'https://api.flickr.com/services/rest/';
 
 
   var flickrSearch = $resource(baseUrl, {

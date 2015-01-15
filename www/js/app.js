@@ -39,7 +39,6 @@ angular.module('ionic.weather', ['ionic', 'ionic.weather.services', 'ionic.weath
     }
   };
 
-
   this.getBackgroundImage = function(lat, lng, locString) {
     Flickr.search(locString, lat, lng).then(function(resp) {
       var photos = resp.photos;
